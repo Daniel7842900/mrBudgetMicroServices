@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    container_name: mysql-db
+    volumns:
+      - mrBudget-mysql-data:/var/lib/mysql
+
+volumes:
+  mrBudget-mysql-data:
